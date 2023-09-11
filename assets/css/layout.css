@@ -1,0 +1,303 @@
+
+
+@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import './reset.css';
+@import './common.css';
+
+
+
+
+/* 헤더 */
+
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+
+
+header {
+  max-width: 1152px;
+  width: 1152px;
+  margin: 0 auto;
+}
+.header-top{
+  display: flex;
+  height: 52px;
+  position: relative;
+  align-items: center;
+}
+.header-top .logo{}
+.header-top .logo a{
+  background-position: -5px -165px;
+  width: 105px;
+  height: 27px;
+  display: block;
+}
+
+.header-top .gnb{
+  
+  margin: 0 0 0 30px;
+  /* padding: 0 0 0 40px; */
+}
+.header-top .gnb ul{
+  display: flex;
+}
+.header-top .gnb ul li{
+  margin: 0 0 0 20px;
+}
+.header-top .gnb ul li a{
+  font-size: 16px;
+  line-height: 48px;
+  font-weight: 700;
+}
+.header-top .gnb ul li a:hover {
+  color: #2292E9;
+}
+.header-top .util-area{
+  position: absolute;
+  right: 0;
+}
+.header-top .util-area ul{
+  display: flex;
+}
+.header-top .util-area ul li{
+  padding: 0 10px;
+}
+.header-top .util-area ul li a{
+  font-size: 14px;
+  font-weight: 700;
+
+}
+.header-top .util-area ul li a:hover {
+  color: #2292E9;
+}
+
+.header-bottom {
+  display: flex;
+  position: relative;
+  height: 119px;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-bottom .slogun-area {
+  width: 133px;
+  height: 51px;
+  
+}
+.header-bottom .slogun-area img{}
+
+.header-bottom .search-area {
+  width: 520px;height: 42px;
+  border: #2292E9 3px solid;
+}
+.header-bottom .search-area form{
+  position: relative;
+}
+.header-bottom .search-area form fieldset {
+  border: none;
+  width: 520px;
+  height: 42px;
+}
+.header-bottom .search-area form {
+  border: none;
+
+}
+.header-bottom .search-area form input{
+    border: none;
+    padding: 0 10px;
+    height: 35px;
+    width: 480px;
+    
+}
+.header-bottom .search-area form input::placeholder {
+  color: #2292E9;
+    font-size: 14px;
+}
+.header-bottom .search-area form .btn-keyboard{
+  position: absolute;
+  right: 36px;
+  width: 29px;
+  height: 16px;
+  background: url(https://www.seoul.go.kr/ksearch/res_newseoul/images/search/keyboard.png) no-repeat 0 0;
+  transform: translateY(50%);
+}
+.header-bottom .search-area form .btn-submit{
+  background: url(../images/icon_set_common.png) no-repeat -32px -97px;
+  width: 36px;height: 36px;
+  position: absolute;
+  right: 0;top: 0;
+}
+
+.weather-area {
+  width: 270px;height: 85px;
+  display: flex;
+  align-items: center;
+}
+.weather-area .thumb-box{}
+.weather-area .thumb-box img{}
+.weather-area .info-wrap{
+  display: flex;
+  flex-direction: column;
+}
+.weather-area .info-wrap .temp-box{}
+.weather-area .info-wrap .temp-box .temp{
+  font-size: 25px;
+  font-weight: bold;
+  margin: 0 5px 0 0;
+}
+.weather-area .info-wrap .temp-box .info{
+  font-size: 16px;
+
+}
+.weather-area .info-wrap .dust{
+  margin: 7px 0 0 0;
+
+}
+.weather-area .info-wrap .dust span{
+  font-size: 13px;
+
+}
+.weather-area .info-wrap .dust span .good {
+  color: #0068b7;
+
+}
+
+.lang-area {
+  position: absolute;
+  top: 0; right: 0;
+  display: flex;
+  align-items: center;
+}
+.lang-area .cityLang{
+  border-radius: 0;
+    font-size: 10px;
+    padding: 2px;
+    width: 80px;
+    height: 21px;
+    transform: translateX(4px);
+}
+.lang-area .go{
+  color: #fff;
+  font-size: 10px;
+  background: #1e6cb3;
+  width: 30px;
+  height: 21px;
+}
+
+
+
+/* 푸터 */
+
+footer {
+  max-width: 1152px;
+  width: 1152px;
+  margin: 0 auto;
+}
+footer .footer-top{
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+}
+footer .footer-top .link-list{
+  display: flex;
+  font-size: 12px;
+
+}
+footer .footer-top .link-list li{
+  padding: 0 10px;
+}
+footer .footer-top .link-list li:nth-child(1) {
+  padding-left: 0;
+}
+footer .footer-top .link-list li strong {
+  font-weight: bold;
+}
+footer .footer-top .link-list li + * {
+  border-left: 1px solid #ccc;
+}
+footer .footer-top .link-list li a{}
+footer .footer-top .sns-list{
+  display: flex;
+}
+footer .footer-top .sns-list li {
+  width: 24px;height: 24px;
+  margin-left: 12px;
+
+}
+
+footer .footer-top .sns-list li a {
+  width: 25px; height: 25px;
+  display: block;
+}
+footer .footer-top .sns-list li:nth-child(1) a {
+  background: url(../images/icon_set_sns.png) no-repeat -25px 0;
+}
+footer .footer-top .sns-list li:nth-child(2) a {
+  background: url(../images/icon_set_sns.png) no-repeat -50px 0;
+}
+footer .footer-top .sns-list li:nth-child(3) a {
+  background: url(../images/icon_set_sns.png) no-repeat -75px 0;
+}
+footer .footer-top .sns-list li:nth-child(4) a {
+  background: url(../images/icon_set_sns.png) no-repeat -100px 0;
+}
+footer .footer-top .sns-list li:nth-child(5) a {
+  background: url(../images/icon_set_sns.png) no-repeat -125px 0;
+}
+footer .footer-top .sns-list li:nth-child(6) a {
+  background: url(../images/icon_set_sns.png) no-repeat -150px 0;
+}
+
+footer .footer-top .sns-list li:nth-child(1) a:hover {
+  background: url(../images/icon_set_sns.png) no-repeat -25px -25px;
+}
+footer .footer-top .sns-list li:nth-child(2) a:hover {
+  background: url(../images/icon_set_sns.png) no-repeat -50px -25px;
+}
+footer .footer-top .sns-list li:nth-child(3) a:hover {
+  background: url(../images/icon_set_sns.png) no-repeat -75px -25px;
+}
+footer .footer-top .sns-list li:nth-child(4) a:hover {
+  background: url(../images/icon_set_sns.png) no-repeat -100px -25px;
+}
+footer .footer-top .sns-list li:nth-child(5) a:hover {
+  background: url(../images/icon_set_sns.png) no-repeat -125px -25px;
+}
+footer .footer-top .sns-list li:nth-child(6) a:hover {
+  background: url(../images/icon_set_sns.png) no-repeat -150px -25px;
+}
+footer .footer-bottom{
+  display: flex;
+  align-items: center;
+  padding: 40px 0;
+  position: relative;
+  height: 45px;
+  
+}
+footer .footer-bottom .qna{
+  background: url(../images/icon_set_common.png) no-repeat -180px 0;
+  display: block;
+  height: 45px;
+  width: 108px;
+  margin: 0 40px 0 0;
+}
+footer .footer-bottom .text{
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+footer .footer-bottom .text p{
+  padding: 0 0 2px;
+  color: #636363;
+  letter-spacing: -0.05em;
+}
+footer .footer-bottom .mark-area {
+  position: absolute;
+  right: 0;
+}

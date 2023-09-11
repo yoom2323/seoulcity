@@ -1,0 +1,31 @@
+.blind {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    margin: -1px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+/* sp1 */
+.sc-visual .group-nav .btn-nav::before {
+    background-image: url(https://www.seoul.go.kr/res_newseoul/images/main/icon_main_2019.png);
+    background-repeat: no-repeat;
+}
+
+/* sp2 */
+.header-top .logo a,
+.sc-bannerslide .control-area .btn,
+.sc-visual .control-area .btn{
+    background-image: url(https://www.seoul.go.kr/res_newseoul/images/main/icon_set_common_2019.png);
+    background-repeat: no-repeat;
+}
+/* sp3 */
+
+.sc-service .group-list .service-list .service-item a{
+    background-image: url(../images/icon_set_service_202205.png);
+    background-repeat: no-repeat;
+}
